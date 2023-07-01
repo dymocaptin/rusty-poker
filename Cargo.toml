@@ -1,0 +1,7 @@
+[package]
+name = "game-of-poker"
+version = "0.1.0"
+authors = ["dymocaptin <peknudsen@gmail.com>"]
+
+[dependencies]
+rand = "0.8"

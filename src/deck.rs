@@ -11,7 +11,7 @@ pub struct Deck {
 }
 
 impl Deck {
-    pub fn new() -> Self {
+    pub fn new_standard_deck() -> Self {
         let mut cards = Vec::new();
         cards.push(Card::new(Suit::Diamond, Rank::Ace));
         cards.push(Card::new(Suit::Diamond, Rank::Two));

@@ -1,16 +1,17 @@
-use role::Role;
 use card::Card;
+use role::Role;
 
-pub struct Player<'a> {
-    pub name: &'a str,
+#[derive(Debug)]
+pub struct Player {
+    pub name: String,
     pub role: Role,
-    pub hand: Vec<Card>
+    pub hand: Vec<Card>,
 }
 
-pub fn new(name: &str) -> Player {
+pub fn new(name: String) -> Player {
     Player {
         name,
         role: Role::Participant,
-        hand: Vec::new()
+        hand: Vec::new(),
     }
 }

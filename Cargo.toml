@@ -5,3 +5,5 @@ authors = ["dymocaptin <peknudsen@gmail.com>"]
 
 [dependencies]
 rand = "0.8"
+clap = { version = "4.0", features = ["derive"] }
+names = { version = "0.14.0", default-features = false }
